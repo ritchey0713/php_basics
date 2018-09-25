@@ -30,14 +30,18 @@
           <h1>My First PHP Page</h1>
     
           <h2>Unit Conversion</h2>
-    
+            <?php include "inc/units.php"; ?>
           <hr />
     
           <h2>Daily Exercise</h2>
+          <?php include 'inc/exersize.php';?>
         </section>
     </div>
     <section class="footer text-center">
-      &copy; <?php date('Y'); ?> <?php echo $displayName; ?>
+      &copy; <?php echo date('Y');
+                   echo " " . $displayName . " "; 
+                   echo "Last Modified: " . date ("F d Y H:i:s.", getlastmod());
+                   ?>
     </section>
   </body>
 </html>
