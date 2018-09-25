@@ -37,7 +37,7 @@
         </section>
     </div>
     <section class="footer text-center">
-      &copy; 2018 <?php echo $displayName; ?>
+      &copy; <?php date('Y'); ?> <?php echo $displayName; ?>
     </section>
   </body>
 </html>
